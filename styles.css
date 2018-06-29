@@ -1,0 +1,142 @@
+
+body{
+    width:90vw;
+    height:100vh;   
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#main-container{
+    height: 70vw;
+    width: 100vw;
+    position: relative;
+}
+    
+
+body .logo-container{
+    width: 80vw;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 50% 40% 20%;
+   
+}
+body .logo-container .logo{
+    width:25vw;
+    height:10vw;
+    align-self: center;
+}
+.logo-container a{
+    align-self: center;
+    text-decoration: none;
+    font-size:2vw;
+    cursor: pointer;
+}
+.logo-container a:hover{
+    color:#EE2D48;
+}
+.student-information{ 
+   
+   width:90vw;
+    margin:15vw auto;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2vw;
+}
+.student-information #gallery-images{
+   
+    margin: 1vw 10vw;
+}
+.student-information #gallery-images img{
+    transition-duration: 0.4s; 
+    margin: 0 2vw;
+    width: 25vw;
+    height: 25vw;
+    opacity:0.8;
+    border-radius: 50%;
+    border:5px solid #ee2d48;
+    transition: width 2s, height 2s, transform 2s;
+}
+.student-information #gallery-images img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    width: 300px;
+    height: 300px;
+   
+}
+ .buttons{
+    width:30vw;
+    margin:3vw auto;
+    display:grid;
+    grid-template-columns:50% 50%; 
+   
+}
+.button{
+    border:none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #252229;
+    font-size: 3vw; 
+    color:white;
+}
+.button:hover{
+    background-color:#EE2D48;      
+}
+#hide-button{
+    font-size:2vw;
+    position: absolute;
+    margin:28vw 0 0 46vw;
+}
+
+.gallery-details{
+    transition-duration: 0.4s;   
+    height: 35vw;
+    width:35vw;
+    opacity:0.65;
+    position:relative;    
+}
+.gallery-details h2{
+    background-color: #EE2D48;
+    text-align: center;
+    margin-bottom:0;
+    font-size:3vw;
+}
+.gallery-details h2:hover{
+    color:white;
+}
+.gallery-details p{
+    background-color: antiquewhite;
+    margin:0;
+    font-size: 1.5vw;
+    font-weight: 15px;
+   
+}
+.gallery-img{
+    width:10vw;
+    height: 10vw;
+    border-radius: 35%;
+}
+.skills-expand{
+    background-color: antiquewhite;
+    position: absolute;
+    margin-left: 6.75vw;
+    margin-top: -1.5vw;
+    border: none;
+    border-bottom-color: aqua;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.skills-expand:hover{
+    font-size: 1.25vw;
+    color:blue;
+    margin-left: 7vw;
+    margin-top: -1.35vw;
+    background-color: azure;
+}
+ul{
+    background-color: antiquewhite;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+    font-size: 1.3vw;
+}
+
