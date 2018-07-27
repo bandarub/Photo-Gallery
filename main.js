@@ -5,8 +5,10 @@ let info=document.getElementById('information');
 let image=document.getElementById('images');
 let btn=document.getElementById('button');
 
+//function to display next student's datails
+
 function displayNext(){
-// data1.forEach((photo) =>{   
+ 
   
     let img = document.createElement('img');
     img.id="images";
@@ -30,16 +32,7 @@ function displayNext(){
 
     let h2 = document.createElement('h2');
     h2.textContent = data1[i].firstName + " " + data1[i].lastName;
-     
-//     for (const key of Object.keys(data1[i])){
-//         console.log(valueOf(key));
-//     }
-//     // let keys=Object.keys(data1[i]);
-//     // console.log(keys.value);
-// //     let values=Object.values(data1[i]);
-// //    for (const key in keys) {
-      
-// //    }
+
 
     let p1=document.createElement('p');
     p1.textContent="Title:"+data1[i].title;
@@ -65,9 +58,6 @@ function displayNext(){
     let p8=document.createElement('p');
     p8.textContent="joinedOn:"+data1[i].joinedOn;
 
-    // img.src = imgUrl + photo.src;   
-    // console.log(photo.firstName ,photo.lastName, photo.nationality);
-    // console.log(imgUrl + photo.src);
     document.body.appendChild(image);
     image.appendChild(img);
     document.body.appendChild(btn);
@@ -85,15 +75,7 @@ function displayNext(){
  }
 displayNext();
 
-// function next(){
-
-// console.dir(info);
-// i++;
-// display(i);
-// }
-
-
-
+//function to toggle the details
 
 function toggle(){
     if(info.style.display==="none"){
