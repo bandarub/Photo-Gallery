@@ -21,13 +21,11 @@ function displayNextPhoto(){
      if(count>=data.length-1){
         count=0;
         details(count);
-        // console.log(count);
     }
     else{
         count++;  
         details(count);
-        // console.log(count);
-            
+           
     }
     
  }
@@ -36,11 +34,9 @@ function displayPreviousPhoto(){
     if(count<0){             
         count=data.length-1; 
         details(count); 
-        // console.log(count);
             
     }else{
         details(count); 
-        // console.log(count);
     }
          
 }
@@ -58,17 +54,11 @@ function details(count){
         galleryDetails.innerHTML="";
         let imgUrl = 'images/' + data[count].src;
         galleryPhoto.src = imgUrl;
-        galleryImage.appendChild(galleryPhoto);
-        
+        galleryImage.appendChild(galleryPhoto);        
 
         let h2 = document.createElement('h2');
         h2.innerHTML = data[count].firstName + " " + data[count].lastName;
-        
-        let btn=document.createElement('button');
-        btn.innerHTML=h2.innerHTML;
-        btn.addEventListener('click',toggle);
-
-    
+      
         let p1=document.createElement('p');
         p1.innerHTML = "<strong>Title:</strong>"+" "+ data[count].title;    
     
@@ -118,7 +108,6 @@ function details(count){
         p8.innerHTML="<strong>JoinedOn:</strong>"+" "+data[count].joinedOn;
     
         galleryImage.appendChild(galleryPhoto);
-        galleryDetails.appendChild(btn);
         galleryDetails.appendChild(h2);
         galleryDetails.appendChild(p1);
         galleryDetails.appendChild(p2);

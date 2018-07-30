@@ -7,8 +7,7 @@ let btn=document.getElementById('button');
 
 //function to display next student's datails
 
-function displayNext(){
- 
+function displayNext(){ 
   
     let img = document.createElement('img');
     img.id="images";
@@ -27,12 +26,10 @@ function displayNext(){
     next_button.id="next-button";
     next_button.className="button1";
     next_button.addEventListener("click",displayNext);
-    i++;
-   
+    i++;   
 
     let h2 = document.createElement('h2');
     h2.textContent = data1[i].firstName + " " + data1[i].lastName;
-
 
     let p1=document.createElement('p');
     p1.textContent="Title:"+data1[i].title;
@@ -60,7 +57,7 @@ function displayNext(){
 
     document.body.appendChild(image);
     image.appendChild(img);
-    document.body.appendChild(btn);
+    // document.body.appendChild(btn);
     btn.appendChild(hide_button);
     btn.appendChild(next_button);
     document.body.appendChild(info);
