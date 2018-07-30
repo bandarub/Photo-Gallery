@@ -12,7 +12,7 @@ function displayNext(){
     let img = document.createElement('img');
     img.id="images";
     img.className="images";
-    img.src= `images/${data1[i].firstName}.jpg`;
+    img.src= `images/${data1[i].src}`;
 
 
     let hide_button=document.createElement('button');
