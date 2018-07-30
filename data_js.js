@@ -5,7 +5,7 @@ const data = [
               lastName: '',
               title: 'Junior Developer',
               nationality: '',
-              src: 'rasbin.jpg',
+              src: 'Rasbin.jpg',
               alt: 'Rasbin',
               skills: [
                 'HTML',
@@ -29,7 +29,7 @@ const data = [
               lastName: 'Gyawali',
               Title: 'Trainee',
               nationality: 'Nepalese',
-              src: 'aditya.jpg',
+              src: 'Aditya.jpg',
               alt: 'Aditya',
               skills: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'JQuery', 'React'],
               whySofterDeveloper:
@@ -44,7 +44,7 @@ const data = [
               lastName: 'Shrestha',
               title: 'Junior Developer',
               nationality: 'Nepali',
-              src: 'sanjog.jpg',
+              src: 'Sanjog.jpg',
               alt: 'Sanjog',
               skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
               whySofterDeveloper: 'Interest',
